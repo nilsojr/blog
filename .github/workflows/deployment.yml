@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: ng build
+        run: npm run build -- --configuration production
 
       - name: Copy files to EC2
         uses: appleboy/scp-action@v1.0.0
